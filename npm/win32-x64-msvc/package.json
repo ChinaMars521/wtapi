@@ -1,0 +1,20 @@
+{
+  "name": "@wtapi_get/wtapi-win32-x64-msvc",
+  "version": "0.0.0",
+  "os": [
+    "win32"
+  ],
+  "cpu": [
+    "x64"
+  ],
+  "main": "wtapi.win32-x64-msvc.node",
+  "files": [
+    "wtapi.win32-x64-msvc.node"
+  ],
+  "description": "",
+  "author": "",
+  "license": "MIT",
+  "engines": {
+    "node": ">= 10"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "name": "@wtapi_get/wtapi-darwin-x64",
+  "version": "0.0.0",
+  "os": [
+    "darwin"
+  ],
+  "cpu": [
+    "x64"
+  ],
+  "main": "wtapi.darwin-x64.node",
+  "files": [
+    "wtapi.darwin-x64.node"
+  ],
+  "description": "",
+  "author": "",
+  "license": "MIT",
+  "engines": {
+    "node": ">= 10"
+  }
+}
