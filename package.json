@@ -20,7 +20,7 @@
     "build:debug": "napi build --platform",
     "prepublishOnly": "napi prepublish -t npm",
     "version": "napi version",
-    "test":"node test.mjs"
+    "test":"node -v"
   },
   "dependencies": {},
   "author": "",
