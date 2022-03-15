@@ -7,9 +7,14 @@ version = "0.0.0"
 crate-type = ["cdylib"]
 
 [dependencies]
+easy-http-request = "0.2.13"
 # Default enable napi4 feature, see https://nodejs.org/api/n-api.html#node-api-version-matrix
 napi = { version = "2.2.0", default-features = false, features = ["napi4"] }
 napi-derive = "2.2.0"
+reqwest = { version = "0.11", features = ["json"] }
+tokio = { version = "1", features = ["full"] }
+serde_json = "1.0"
+
 
 [build-dependencies]
 napi-build = "1.2.1"
