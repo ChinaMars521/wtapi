@@ -1,15 +1,17 @@
 {
   "name": "@wtapi_get/wtapi-win32-x64-msvc",
-  "version": "0.0.1",
+  "version": "0.0.5",
   "os": [
     "win32"
   ],
   "cpu": [
     "x64"
   ],
-  "main": "wtapi.win32-x64-msvc.node",
+  "main": "index.js",
   "files": [
-    "wtapi.win32-x64-msvc.node"
+    "wtapi.win32-x64-msvc.node",
+    "index.js",
+    "index.d.ts"
   ],
   "description": "",
   "author": "",

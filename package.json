@@ -20,9 +20,22 @@
     "build:debug": "napi build --platform",
     "prepublishOnly": "napi prepublish -t npm",
     "version": "napi version",
-    "test":"node -v"
+    "test": "node -v"
   },
   "dependencies": {},
   "author": "",
-  "description": ""
+  "description": "",
+  "os": [
+    "linux",
+    "win32",
+    "darwin"
+  ],
+  "cpu": [
+    "x64"
+  ],
+  "optionalDependencies": {
+    "@wtapi_get/wtapi-darwin-x64": "0.0.1",
+    "@wtapi_get/wtapi-linux-x64-gnu": "0.0.1",
+    "@wtapi_get/wtapi-win32-x64-msvc": "0.0.5"
+  }
 }
