@@ -24,18 +24,5 @@
   },
   "dependencies": {},
   "author": "",
-  "description": "",
-  "os": [
-    "linux",
-    "win32",
-    "darwin"
-  ],
-  "cpu": [
-    "x64"
-  ],
-  "optionalDependencies": {
-    "@wtapi_get/wtapi-darwin-x64": "0.0.1",
-    "@wtapi_get/wtapi-linux-x64-gnu": "0.0.1",
-    "@wtapi_get/wtapi-win32-x64-msvc": "0.0.5"
-  }
+  "description": ""
 }
