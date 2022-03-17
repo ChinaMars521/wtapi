@@ -18,4 +18,11 @@ export interface Config {
 export interface Pet1 {
   body: Record<string, string>
 }
+export interface DonConfig {
+  taskNum: number
+  url: string
+  path: string
+  fileName: string
+}
+export function wtDownload(dm: DonConfig): void
 export function wtaxios(configop: Config): Pet1

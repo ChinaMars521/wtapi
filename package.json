@@ -22,7 +22,14 @@
     "version": "napi version",
     "test": "node -v"
   },
-  "dependencies": {},
+  "dependencies": {
+    "@napi-rs/canvas": "^0.1.21"
+  },
   "author": "",
-  "description": ""
+  "description": "",
+  "optionalDependencies": {
+    "@wtapi_get/wtapi-win32-x64-msvc": "0.0.1",
+    "@wtapi_get/wtapi-darwin-x64": "0.0.1",
+    "@wtapi_get/wtapi-linux-x64-gnu": "0.0.1"
+  }
 }
