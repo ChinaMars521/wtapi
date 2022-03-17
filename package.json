@@ -22,11 +22,7 @@
     "version": "napi version",
     "test": "node -v"
   },
-  "dependencies": {
-    "@napi-rs/canvas": "^0.1.21"
-  },
+  "dependencies": {},
   "author": "",
-  "description": "",
-  "optionalDependencies": {
-  }
+  "description": ""
 }
