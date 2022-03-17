@@ -7,11 +7,9 @@
   "cpu": [
     "x64"
   ],
-  "main": "index.js",
+  "main": "wtapi.win32-x64-msvc.node",
   "files": [
-    "wtapi.win32-x64-msvc.node",
-    "index.js",
-    "index.d.ts"
+    "wtapi.win32-x64-msvc.node"
   ],
   "description": "",
   "author": "",
