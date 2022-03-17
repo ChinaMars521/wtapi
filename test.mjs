@@ -1,6 +1,4 @@
-import wtaxios from '@wtapi_get/wtapi-win32-x64-msvc'
+import { wtDownload } from './index.js'
 
-// var a1 = wtapi("https://www.baidu.com");
-console.log(wtaxios)
-var a2 = wtaxios({method:"GETTEXT",url:"https://api.hbqgame.com/game/sggzc/comm/experienceUrl"})
-console.log('From native', a2)
+wtDownload({url:"https://dl1.qwp365.cn/buding/mod/3DMGAME-ERquanditucifucd.zip",taskNum:20,path:"./test/",fileName:"1.zip"});
+console.log("123")

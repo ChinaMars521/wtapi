@@ -236,8 +236,9 @@ if (!nativeBinding) {
   throw new Error(`Failed to load native binding`)
 }
 
-const { sum, wtapi, wtaxios } = nativeBinding
+const { sum, wtapi, wtDownload, wtaxios } = nativeBinding
 
 module.exports.sum = sum
 module.exports.wtapi = wtapi
+module.exports.wtDownload = wtDownload
 module.exports.wtaxios = wtaxios
