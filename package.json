@@ -7,7 +7,7 @@
     "name": "wtapi",
     "triples": {}
   },
-  "files":["index.js","index.d.ts","README.md"],
+  "files":["index.js","index.d.ts","README.md","test.mjs"],
   "license": "MIT",
   "devDependencies": {
     "@napi-rs/cli": "^2.4.5"
