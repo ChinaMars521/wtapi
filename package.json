@@ -1,13 +1,18 @@
 {
   "name": "@wtapi_get/wtapi",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "main": "index.js",
   "types": "index.d.ts",
   "napi": {
     "name": "wtapi",
     "triples": {}
   },
-  "files":["index.js","index.d.ts","README.md","test.mjs"],
+  "files": [
+    "index.js",
+    "index.d.ts",
+    "README.md",
+    "test.mjs"
+  ],
   "license": "MIT",
   "devDependencies": {
     "@napi-rs/cli": "^2.4.5"
