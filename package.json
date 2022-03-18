@@ -33,7 +33,7 @@
     "artifacts": "napi artifacts",
     "build": "napi build --platform --release",
     "build:debug": "napi build --platform",
-    "prepublishOnly": "napi prepublish -t npm",
+    "prepublishOnly": "napi prepublish -c package.json",
     "version": "napi version",
     "test": "node -v",
     "linuxmusl": "apk add --no-cache libressl-dev musl-dev libffi-dev"
