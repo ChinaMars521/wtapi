@@ -13,8 +13,10 @@
   ],
   "description": "",
   "author": "",
+  "homepage": "https://github.com/ChinaMars521/wtapi",
   "license": "MIT",
   "engines": {
     "node": ">= 10"
-  }
+  },
+  "repository": "https://github.com/ChinaMars521/wtapi"
 }

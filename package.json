@@ -5,7 +5,15 @@
   "types": "index.d.ts",
   "napi": {
     "name": "wtapi",
-    "triples": {}
+    "triples": {
+      "version": "0.0.18",
+      "addition": [
+        "darwin-x64",
+        "linux-x64-gnu",
+        "linux-x64-musl",
+        "win32-x64-msvc"
+      ]
+    }
   },
   "files": [
     "index.js",
@@ -32,5 +40,11 @@
   },
   "dependencies": {},
   "author": "",
-  "description": ""
+  "description": "",
+  "repository": "https://github.com/ChinaMars521/wtapi",
+  "optionalDependencies": {
+    "@wtapi_get/wtapi-win32-x64-msvc": "0.0.16",
+    "@wtapi_get/wtapi-darwin-x64": "0.0.16",
+    "@wtapi_get/wtapi-linux-x64-gnu": "0.0.16"
+  }
 }

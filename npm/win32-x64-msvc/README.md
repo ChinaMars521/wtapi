@@ -1,3 +1,3 @@
-# `@wtapi_get/wtapi-linux-x64-musl`
+# `@wtapi_get/wtapi-win32-x64-msvc`
 
-This is the **x86_64-unknown-linux-musl** binary for `wtapi`
+This is the **x86_64-pc-windows-msvc** binary for `@wtapi_get/wtapi`
