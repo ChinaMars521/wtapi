@@ -26,7 +26,8 @@
     "build:debug": "napi build --platform",
     "prepublishOnly": "napi prepublish -t npm",
     "version": "napi version",
-    "test": "node -v"
+    "test": "node -v",
+    "linuxmusl":"apk add --no-cache libressl-dev musl-dev libffi-dev"
   },
   "dependencies": {},
   "author": "",
