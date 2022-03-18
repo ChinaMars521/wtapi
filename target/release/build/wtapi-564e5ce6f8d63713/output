@@ -1,5 +1,0 @@
-cargo:rerun-if-env-changed=DEBUG_GENERATED_CODE
-cargo:rustc-link-lib=node-x64
-cargo:rustc-link-search=native=J:\123123\wtapi\target\release\build\wtapi-564e5ce6f8d63713\out
-cargo:rustc-cdylib-link-arg=delayimp.lib
-cargo:rustc-cdylib-link-arg=/DELAYLOAD:node.exe

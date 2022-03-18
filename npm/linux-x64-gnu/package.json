@@ -1,6 +1,6 @@
 {
   "name": "@wtapi_get/wtapi-linux-x64-gnu",
-  "version": "0.0.17",
+  "version": "0.0.0",
   "os": [
     "linux"
   ],
@@ -11,12 +11,8 @@
   "files": [
     "wtapi.linux-x64-gnu.node"
   ],
-  "description": "",
-  "author": "",
-  "homepage": "https://github.com/ChinaMars521/wtapi",
   "license": "MIT",
   "engines": {
     "node": ">= 10"
-  },
-  "repository": "https://github.com/ChinaMars521/wtapi"
+  }
 }
