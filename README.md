@@ -14,4 +14,4 @@ wtDownload({url:"https://dl1.qwp365.cn/buding/mod/3DMGAME-ERquanditucifucd.zip",
 wtExtractZip("J:\\123123\\wtapi\\test\\1.zip","./test/")
 ```
 linux 版本目前只兼容Centos,alpine 未兼容其他  
-未来版本兼容ubuntu
+未来版本兼容ubuntu,有些版本linux需要更新opensll按需要安装
