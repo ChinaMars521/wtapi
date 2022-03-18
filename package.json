@@ -1,3 +1,5 @@
+
+   
 {
   "name": "@wtapi_get/wtapi",
   "version": "0.1.3",
@@ -5,19 +7,7 @@
   "types": "index.d.ts",
   "napi": {
     "name": "wtapi",
-    "triples": {
-      "version": "0.1.3",
-      "addition": [
-        "darwin-x64",
-        "linux-x64-gnu",
-        "linux-x64-musl",
-        "win32-x64-msvc"
-      ]
-    }
-  },
-  "publishConfig": {
-    "registry": "https://registry.npmjs.org",
-    "access": "public"
+    "triples": {}
   },
   "files": [
     "index.js",
@@ -37,13 +27,12 @@
     "artifacts": "napi artifacts",
     "build": "napi build --platform --release",
     "build:debug": "napi build --platform",
-    "prepublishOnly": "napi prepublish",
+    "prepublishOnly": "napi prepublish -t npm",
     "version": "napi version",
     "test": "node -v",
     "linuxmusl": "apk add --no-cache libressl-dev musl-dev libffi-dev"
   },
   "dependencies": {},
   "author": "",
-  "description": "",
-  "repository": "https://github.com/ChinaMars521/wtapi"
+  "description": ""
 }
