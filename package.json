@@ -6,7 +6,7 @@
   "napi": {
     "name": "wtapi",
     "triples": {
-      "version": "0.0.18",
+      "version": "0.1.2",
       "addition": [
         "darwin-x64",
         "linux-x64-gnu",
@@ -14,6 +14,10 @@
         "win32-x64-msvc"
       ]
     }
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org",
+    "access": "public"
   },
   "files": [
     "index.js",
@@ -33,7 +37,7 @@
     "artifacts": "napi artifacts",
     "build": "napi build --platform --release",
     "build:debug": "napi build --platform",
-    "prepublishOnly": "napi prepublish -c package.json",
+    "prepublishOnly": "napi prepublish",
     "version": "napi version",
     "test": "node -v",
     "linuxmusl": "apk add --no-cache libressl-dev musl-dev libffi-dev"
