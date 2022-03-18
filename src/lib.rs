@@ -20,6 +20,12 @@ use std::time::Instant;
 use tokio::fs::{File, remove_file};
 use tokio::io::{AsyncSeekExt, AsyncWriteExt};
 use tokio::sync::Mutex;
+use std::fs;
+use std::io::{copy, Read, Seek, Write};
+use std::str;
+use encoding::{DecoderTrap, Encoding};
+use encoding::all::GBK;
+
 
 use easy_http_request::{DefaultHttpRequest};
 #[napi(object)]
@@ -220,6 +226,7 @@ pub async fn wtDownload(dm:DonConfig) {
   let config = DonConfig::read_config(dm).unwrap();
   let file_path = Path::new(&config.path).join(&config.file_name);
   let now = Instant::now();
+  fs::create_dir_all( Path::new(&config.path));
   new_run(&config.url, file_path, config.task_num).await.unwrap();
   println!("elasped time: {}", now.elapsed().as_secs_f32());
 }
@@ -260,5 +267,66 @@ async fn wtaxios(Configop:Config)->Pet1 {
     Pet1{body:a2}
    
 }
+
+//创建文件夹
+fn create_dir(path: &Path) -> Result<(), std::io::Error> {
+  fs::create_dir_all(path)
+}
+
+///解压
+/// test.zip文件解压到d:/test文件夹下
+///
+fn extract(test: &Path, mut target: &Path) {
+
+  let zipfile = std::fs::File::open(&test).unwrap();
+  let mut zip = zip::ZipArchive::new(zipfile).unwrap();
+  
+ 
+  if !target.exists() {
+      fs::create_dir_all(target).map_err(|e| {
+          println!("{}", e);
+      });
+  }
+ 
+  for i in 0..zip.len() {
+      let mut file = zip.by_index(i).unwrap();
+      println!("{}",GBK.decode(file.name_raw(), DecoderTrap::Strict).unwrap());
+      let name = GBK.decode(file.name_raw(), DecoderTrap::Strict).unwrap();
+      let nameinfo:&str = &name.to_string()[..];
+      if file.is_dir() {
+        
+          println!("file utf8 path {:?}", file.name_raw());//文件名编码,在windows下用winrar压缩的文件夹，中文文夹件会码(发现文件名是用操作系统本地编码编码的，我的电脑就是GBK),本例子中的压缩的文件再解压不会出现乱码
+          let target = target.join(Path::new(&file.name().replace("\\", "")));
+          fs::create_dir_all(target).unwrap();
+      } else {
+          let file_path = target.join(Path::new(nameinfo));
+          let mut target_file = if !file_path.exists() {
+              println!("file path {}", file_path.to_str().unwrap());
+              fs::File::create(file_path).unwrap()
+          } else {
+              fs::File::open(file_path).unwrap()
+          };
+          copy(&mut file, &mut target_file);
+          // target_file.write_all(file.read_bytes().into());
+      }
+  }
+}
+
+#[napi]
+pub fn wtExtractZip(test: String,path:String) {
+  let testinfo: &str = &test.to_string()[..];
+  let mut my_str = test;
+  my_str.pop();
+  my_str.pop();
+  my_str.pop();
+  my_str.pop();
+  println!("{:?}",my_str);
+  let mut my_str1 = my_str;
+
+  println!("{:?}",my_str1);
+
+  extract(Path::new(testinfo), Path::new(&my_str1));
+}
+
 
 

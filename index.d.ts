@@ -26,3 +26,4 @@ export interface DonConfig {
 }
 export function wtDownload(dm: DonConfig): void
 export function wtaxios(configop: Config): Pet1
+export function wtExtractZip(test: string, path: string): void
