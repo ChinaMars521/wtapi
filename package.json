@@ -1,6 +1,6 @@
 {
   "name": "@wtapi_get/wtapi",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "main": "index.js",
   "types": "index.d.ts",
   "napi": {
@@ -27,7 +27,7 @@
     "prepublishOnly": "napi prepublish -t npm",
     "version": "napi version",
     "test": "node -v",
-    "linuxmusl":"apk add --no-cache libressl-dev musl-dev libffi-dev"
+    "linuxmusl": "apk add --no-cache libressl-dev musl-dev libffi-dev"
   },
   "dependencies": {},
   "author": "",
