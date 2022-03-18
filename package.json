@@ -13,6 +13,7 @@
     "README.md",
     "test.mjs"
   ],
+  "homepage": "https://github.com/ChinaMars521/wtapi",
   "license": "MIT",
   "devDependencies": {
     "@napi-rs/cli": "^2.4.5"
