@@ -322,9 +322,7 @@ pub fn wtExtractZip(test: String,path:String) {
   my_str.pop();
   println!("{:?}",my_str);
   let mut my_str1 = my_str;
-
   println!("{:?}",my_str1);
-
   extract(Path::new(testinfo), Path::new(&my_str1));
 }
 

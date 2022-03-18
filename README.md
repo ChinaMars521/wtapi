@@ -2,7 +2,16 @@
 ## 使用Rust开发的基础APi
 目前接口  
     `wxaxios`  Get Post使用  
-    `wtDownload` 下载文件使用
+    `wtDownload` 下载文件使用  
+    `wtExtractZip` 解压缩ZIP
 
-linux 版本目前只兼容Centos 未兼容其他  
-未来版本兼容alpine,ubuntu
+``` JS
+
+import {wxaxios, wtDownload,wtExtractZip} from './index.js'
+
+wxaxios({method:"GETTEXT",url:"http://www.baidu.com"})
+wtDownload({url:"https://dl1.qwp365.cn/buding/mod/3DMGAME-ERquanditucifucd.zip",taskNum:20,path:"./test/",fileName:"1.zip"});
+wtExtractZip("J:\\123123\\wtapi\\test\\1.zip","./test/")
+```
+linux 版本目前只兼容Centos,alpine 未兼容其他  
+未来版本兼容ubuntu
