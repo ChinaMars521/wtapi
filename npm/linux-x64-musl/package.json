@@ -1,5 +1,5 @@
 {
-  "name": "wtapi-linux-x64-musl",
+  "name": "@wtapi_get/wtapi-linux-x64-musl",
   "version": "0.0.15",
   "os": [
     "linux"
