@@ -1,15 +1,15 @@
 {
-  "name": "@wtapi_get/wtapi-darwin-x64",
-  "version": "0.0.21",
+  "name": "123-darwin-x64",
+  "version": "0.0.0",
   "os": [
     "darwin"
   ],
   "cpu": [
     "x64"
   ],
-  "main": "wtapi.darwin-x64.node",
+  "main": "123.darwin-x64.node",
   "files": [
-    "wtapi.darwin-x64.node"
+    "123.darwin-x64.node"
   ],
   "license": "MIT",
   "engines": {
